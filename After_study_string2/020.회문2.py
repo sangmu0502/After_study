@@ -1,0 +1,121 @@
+"""
+"기러기", "토마토", "스위스"와 같이 똑바로 읽어도 거꾸로 읽어도 똑같은 문장이나 낱말을 회문(回文, palindrome)이라 한다.
+
+8x8 평면 글자판에서 제시된 길이를 가진 회문의 개수를 구하라.
+[제약 사항]
+
+각 칸의 들어가는 글자는 'A', 'B', 'C' 중 하나이다.
+
+ABA도 회문이며, ABBA도 회문이다. A 또한 길이 1짜리 회문이다.
+
+가로 또는 세로로 이어진 회문의 개수만 센다.
+
+아래 그림에서 노란색 경로를 따라가면 길이 7짜리 회문이 되지만 직선이 아니기 때문에 인정되지 않는다.
+[입력]
+
+총 10개의 테스트 케이스가 주어진다.
+
+각 테스트 케이스의 첫 번째 줄에는 찾아야 하는 회문의 길이가 주어지며, 다음 줄에 8x8 크기의 글자판이 주어진다.
+===============================input==========================
+4
+CBBCBAAB
+CCCBABCB
+CAAAACAB
+BACCCCAC
+AABCBBAC
+ACAACABC
+BCCBAABC
+ABBBCCAA
+4
+BCBBCACA
+BCAAACAC
+ABACBCCB
+AACBCBCA
+ACACBAAA
+ACCACCCB
+AACAAABA
+CACCABCB
+3
+BABBBACB
+ABCAACCB
+CCACBCBA
+CACACBCA
+CCABACCB
+CCBAAAAA
+BBACBACA
+CBCCBABC
+4
+ACBBCCCA
+CCBCBACB
+ACBCABAA
+BABCCAAA
+ACCCCCBB
+AABBCCBC
+CCABBACA
+CAACBCCC
+7
+AAACACAB
+CCABCCCC
+CABCAAAA
+BBBCBBBA
+ABCCACCC
+ABACBCBB
+CBABACAB
+BBBBBABB
+3
+ABCBCBCA
+ABCBCCCB
+ABACCCCA
+BBABBBAC
+BBACBCCC
+AAACACCA
+BABCCCBC
+ACCBCBCA
+7
+CACBCCBA
+CBCCBCCA
+CCBCBCAB
+BBCCABAA
+CACCBCCC
+BCCACCBB
+CBCCCBBC
+CBACBCBC
+5
+BCBABCBA
+CBBABABC
+BCACBAAA
+BBABACAB
+BCBCCBAC
+CBBCBBBB
+CBBAACAB
+ACCBCBCC
+3
+BBBBCCAA
+BCBBCACC
+BBCAAAAB
+ABABBABB
+BACAAABA
+ABACCBCA
+ACCAABCB
+BACCACBA
+5
+BCCCACCB
+CABCACAB
+BAACCCAC
+BBABBABC
+CCABABCA
+CABABACC
+CBACACAB
+CBCCCBAB
+=====================output=========================
+#1 12
+#2 10
+#3 31
+#4 11
+#5 1
+#6 43
+#7 2
+#8 11
+#9 34
+#10 8
+"""
